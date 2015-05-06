@@ -14,7 +14,7 @@ exports.rootPost = function(name, year) {
 
   
 }
-exports.test-pathIdGet = function(id) {
+exports.testpathIdGet = function(id) {
 
   var examples = {};
   

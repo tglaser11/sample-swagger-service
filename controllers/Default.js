@@ -34,7 +34,7 @@ module.exports.rootPost = function rootPost (req, res, next) {
     res.end();
 };
 
-module.exports.test-pathIdGet = function test-pathIdGet (req, res, next) {
+module.exports.testpathIdGet = function testpathIdGet (req, res, next) {
   var id = req.swagger.params['id'].value;
   
 
