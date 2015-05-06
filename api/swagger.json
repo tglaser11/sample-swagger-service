@@ -1,0 +1,95 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Echo",
+    "description": "#### Echos back every URL, method, parameter and header\nFeel free to make a path or an operation and use **Try Operation** to test it. The echo server will\nrender back everything.\n",
+    "version": "1.0.0"
+  },
+  "produces": ["application/json"],
+  "host": "localhost:8080",
+  "basePath": "/echo",
+  "paths": {
+  
+  "/": {
+    "get": {
+      "x-swagger-router-controller": "Default",
+      "tags": ["Default"],
+      "operationId": "rootGet",
+      "responses": {
+        
+        "200": {
+  "description" : "Echo GET"
+}
+        
+        
+      }
+    }
+  } ,
+  
+  "/": {
+    "post": {
+      "x-swagger-router-controller": "Default",
+      "tags": ["Default"],
+      "operationId": "rootPost",
+      "parameters": [
+        
+        {
+  "name" : "name",
+  "in" : "formData",
+  "description" : "name",
+  "required" : false,
+  "type" : "string"
+},
+        
+        {
+  "name" : "year",
+  "in" : "formData",
+  "description" : "year",
+  "required" : false,
+  "type" : "string"
+}
+        
+      ],
+      "responses": {
+        
+        "200": {
+  "description" : "Echo POST"
+}
+        
+        
+      }
+    }
+  } ,
+  
+  "/test-path/{id}": {
+    "get": {
+      "x-swagger-router-controller": "Default",
+      "tags": ["Default"],
+      "operationId": "test-pathIdGet",
+      "parameters": [
+        
+        {
+  "name" : "id",
+  "in" : "path",
+  "description" : "ID",
+  "required" : true,
+  "type" : "string"
+}
+        
+      ],
+      "responses": {
+        
+        "200": {
+  "description" : "Echo test-path"
+}
+        
+        
+      }
+    }
+  } 
+  
+   
+  }, "definitions": {
+  
+  }
+}
